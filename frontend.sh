@@ -23,6 +23,6 @@ echo status = $?
 mv frontend-main/static/* . &>>$LOG_FILE
 mv frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf &>>$LOG_FILE
 
-eecho starting nginx service
+echo starting nginx service
 systemctl restart nginx &>>$LOG_FILE
 echo status = $?
