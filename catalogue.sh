@@ -28,7 +28,7 @@ mv catalogue-main catalogue
 cd /home/roboshop/catalogue
 
 echo "Install Nodejs Dependencies"
-$ npm install &>>$LOG_FILE
+npm install &>>$LOG_FILE
 echo status = $?
 
 echo "setup catalogue services"
