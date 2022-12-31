@@ -8,7 +8,7 @@ echo "Install Nodejs"
 yum install nodejs -y &>>$LOG_FILE
 echo status = $?
 
-echo "Add Roboshop Application User"
+echo "Add roboshop Application User"
 useradd roboshop &>>$LOG_FILE
 echo status = $?
 
