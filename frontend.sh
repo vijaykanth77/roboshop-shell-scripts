@@ -7,7 +7,7 @@ systemctl enable nginx &>>$LOG_FILE
 systemctl start nginx &>>$LOG_FILE
 
 echo downloading ngimx
-crl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$LOG_FILE
+curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>$LOG_FILE
 echo status = $?
 
 cd /usr/share/nginx/html &>>$LOG_FILE
